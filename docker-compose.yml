@@ -24,6 +24,7 @@ services:
     volumes:
       - ./odoo/config:/etc/odoo
       - ./odoo/addons:/mnt/extra-addons
+      - ./odoo/data:/var/lib/odoo
     restart: always
 
   n8n:
