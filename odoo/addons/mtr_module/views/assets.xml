@@ -1,0 +1,10 @@
+<odoo>
+  <template id="mtr_chatbot_assets" inherit_id="web.assets_backend" name="MTR Chatbot Assets">
+    <xpath expr="." position="inside">
+      <link rel="stylesheet" type="text/css" href="/mtr_module/static/src/css/mtr_chatbot.css"/>
+      <script type="text/javascript" src="/mtr_module/static/src/js/mtr_chatbot.js"></script>
+      <script type="text/javascript" src="/mtr_module/static/src/js/mtr_list_resend_button.js"></script>
+    </xpath>
+  </template>
+
+</odoo>
