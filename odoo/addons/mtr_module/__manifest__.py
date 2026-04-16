@@ -1,0 +1,36 @@
+{
+    "name": "MTR Inventory Integration",
+    "summary": "MTR and inventory data management with join reporting",
+    "description": "Stores MTR extraction data and Business Central inventory in Odoo 13.",
+    "author": "EOXS",
+    "category": "Inventory",
+    "version": "13.0.2.0.0",
+    "depends": ["base", "mail", "website", "web"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/views.xml",
+        "views/specs.xml",
+        "views/assets.xml",
+        "views/templates.xml",
+        "views/module_icon.xml",
+        "views/website_page.xml",
+    ],
+    "assets": {
+        "web.assets_backend": [
+            "mtr_module/static/src/css/mtr_chatter.css",
+            "mtr_module/static/src/css/mtr_chatbot.css",
+            "mtr_module/static/src/js/mtr_chatbot.js",
+            "mtr_module/static/src/js/mtr_list_resend_button.js",
+        ],
+    },
+    "qweb": [
+        "static/src/xml/mtr_chatbot.xml",
+        "static/src/xml/mtr_list_resend_button.xml",
+    ],
+    "icon": "/mtr_module/static/description/icon.png",
+    "images": ['static/description/icon.png'],
+    "web_icon": "mtr_module,static/description/icon.png",
+    "post_init_hook": "post_init_hook",
+    "application": True,
+    "installable": True,
+}
